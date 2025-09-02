@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.7;
+    color: gray;
+    font-weight: 300;
+    font-size: 1.1rem;
+    background: #000;
+}
+.sticky-wrapper {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+.site-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1999;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    padding: 0.6rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+}
+  #header {
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+  }
+/* When scrolled */
+#header.scrolled {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#header.scrolled nav ul li a:hover {
+    color: #39da56;
+}
+#header .navbar a {
+  color: #fff;  /* white text on transparent background */
+  margin: 0 15px;
+  text-decoration: none;
+}
+.site-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.site-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;  /* keeps color consistent with header NOTED */
+  position: relative; /* needed for the underline effect */
+  padding: 5px 0;
+}
+
+/* Underline effect on hover NOTED  */
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: currentColor; /* matches text color */
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%; /* expands underline */
+}
+
+.button-auto {
+ margin-left: 2rem;
+ display: flex;
+ align-items: center;
+ width: 100px;
+ height: 30px;
+ border-radius: 5px;
+ border: 1px solid #39da56;
+ position: relative;
+ overflow: hidden;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ transition: all 0.5s ease-in;
+ z-index: 1;
+}
+.button-auto:hover {
+    background-color: #39da56;
+    color: white;
+}
+.button-auto::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eff3ef;
+    color: white;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.button-auto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease-in;
+    z-index: 1
+}
+.button-auto:hover::before {
+    left: 0;
+}
+.button-auto a {
+    text-decoration: none;
+    color: #39da56;
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+}
+.button-auto:hover a {
+    color: white;
+}
+.hero-section{
+  height: 100vh; /* full screen */
+  display: flex;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+.intro-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* behind the content */
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%); /* darken the image for better text visibility */
+}
+.image-container img, .hero-section::before {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.hero-section::before {
+  background: rgba(0, 0, 0, 0.742);
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: o;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  text-align: center;
+}
+.content h2 {
+  font-size: 2rem;
+  font-family: arial, system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif 'Lora', serif; 
+  font-weight: 700;
+}
+.content h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content p {
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 400px;
+}
