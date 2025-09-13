@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="stylesheet" href="styles/mobile.css">
+    <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <script src="script/scroll.js" defer></script>
     <script src="script/odometer.js" defer></script>
+    <script src="script/carousel.js" defer></script>
+    <script src="script/hamburger.js" defer></script>
     <title>Titan Gym</title>
 </head>
 <body >
@@ -17,10 +22,11 @@
                             <a href="#">Titan Gym</a>
                         </div>
                         <div class="text-auto">
-                            <nav class="site-navigation" role="navigation">
+                            <nav id="navBar" class="mobile-nav" role="navigation">
+                                 <button class="close-btn" id="closeBtn">×</button>
                                 <ul class="site-menu">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Classes</a></li>
+                                    <li><a href="#heroSection">Home</a></li>
+                                    <li><a href="#classes">Classes</a></li>
                                     <li><a href="#">Schedule</a></li>
                                     <li><a href="#">Trainer</a></li>  
                                     <li><a href="#">Services</a></li>
@@ -32,10 +38,13 @@
                                 Contact
                             </a>
                         </div>
+                        <div class="hamburger" id="hamburger">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                </header>
           </div>
           <!-- HERO SECTION -->
-           <section class="hero-section">
+           <section class="hero-section" id="heroSection">
             <div class="intro-section">
                 <div class="image-container">
                     <img src="./images/Gym hero-sec.jpeg" alt="background image">
@@ -49,55 +58,193 @@
            </section>
            <!-- FIRST SECTION -->
            <section class="first-section">
-            <div class="stats-container">
-                        <div class="odometer">
-                             <div class="stat-box">
-                      <i class="bx bx-dumbbell"></i>
-                         <div class="stat-text">
-                          <h2 class="counter" data-target="2260">0</h2>
-                       <p>Members</p>
-                   </div>
-                  </div>
+                        <div class="stats-container">
+                            <div class="odometer">
+                                     <div class="stat-box">
+                                             <i class="bx bx-dumbbell"></i>
+                                             <div class="stat-text">
+                                             <h2 class="counter" data-target="2260">0</h2>
+                                          <p>Members</p>
+                                       </div>
+                                  </div>
 
-                    <div class="stat-box">
-                        <i class='bx bx-cycling'></i> 
-                           <div class="stat-text">
-                             <h2 class="counter" data-target="210">0</h2>
-                             <p>Daily Visitors</p>
-                         </div>
+                            <div class="stat-box">
+                                <i class='bx bx-cycling'></i> 
+                                <div class="stat-text">
+                                    <h2 class="counter" data-target="210">0</h2>
+                                    <p>Daily Visitors</p>
+                                </div>
+                            </div>
+
+                            <div class="stat-box">
+                                    <i class='bx  bx-pulse'  ></i> 
+                                        <div class="stat-text">
+                                        <h2 class="counter" data-target="887">0</h2>
+                                        <p>Health Program</p>
+                                    </div>
+                                </div>
+
+                                <div class="stat-box">
+                                    <i class="bx bx-heart"></i>
+                                        <div class="stat-text">
+                                        <h2 class="counter" data-target="1920">0</h2>
+                                        <p>Heart Beat</p>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="grid-text-card">
+                                        <div class="caption-text">
+                                            <h2>Step Up Your Fitness</h2>
+                                            <p>
+                                                Welcome to Step Up Your Fitness – where your transformation begins. We are more than just a gym. We are a community that believes in progress, strength, and pushing past limits. Whether you're looking to burn fat, build muscle, boost endurance, or simply feel better in your own skin, we’re here to help you rise — step by step.
+                                            </p>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="images/img-gym.jpeg" alt="Gym Image">
+                                        </div>
+                                    </div>
+                              </div>
+                        </div>
+                </section>
+              <!-- SECOND SECTION  -->
+            <section class="section-section" id="classes">
+                    <div class="section-container">
+                                <div class="grid-content">  
+                                <div class="sec-img">
+                                    <img src="./images/class-img.jpeg" alt="gym class image">
+                                </div>
+                                 <div class="tx-box">
+                                        <h2>Classes</h2>
+                                        <p>
+                                            Step Up Your FitnessStrength Training Build muscle, improve posture, and increase your power with guided resistance workouts using free weights, machines, and bodyweight exercises.
+                                            HIIT (High-Intensity Interval Training) A fast-paced, calorie-burning class that alternates short bursts of intense activity with brief recovery periods — perfect for fat loss and endurance
+                                            CrossFit Challenge your limits with functional movements and high-intensity workouts designed to improve strength, agility, and overall performance.
+                                            Yoga & Stretch Improve flexibility, reduce stress, and reconnect with your body through relaxing flows and deep stretching.
+                                            Zumba / Dance Fit Fun, energetic dance-based cardio class that burns calories and lifts your mood — no dance experience needed!
+                                            Boxing Fitness Unleash your power with boxing-inspired training that builds stamina, coordination, and confidence.
+                                            Core & Abs Blast Target your midsection with focused exercises to sculpt your abs and strengthen your core.
+                                            Mobility & Recovery Gentle movement and stretching to aid muscle recovery, prevent injury, and improve overall mobility.                               
+                                     </p>
+                                </div>
+                            </div>
                      </div>
-
-                      <div class="stat-box">
-                              <i class='bx  bx-pulse'  ></i> 
-                                  <div class="stat-text">
-                                   <h2 class="counter" data-target="887">0</h2>
-                                 <p>Health Program</p>
+                     <section id="toolsCarousel" class="splide tools-container" aria-label="Splide Basic HTML Example">
+                         <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="./images/carousel/img-1.jpeg" alt="Image of a gym">
+                                            <div class="tx-content">
+                                                <h3>Classes fitness CoreStorm </h3>
+                                                <span>CoreStorm </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-2.jpeg" alt="image of a gym">
+                                             <div class="tx-content">
+                                                <h3>Classes fitness powerup</h3>
+                                                <span>Powerup</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-3.jpeg" alt="image of a gym">
+                                             <div class="tx-content">
+                                                <h3>Classes fitness Burnzone</h3>
+                                                <span>BurnZone</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-4.jpeg" alt="image of a gym">
+                                            <div class="tx-content">
+                                                <h3>Classes fitness BeastMode BootMode</h3>
+                                                <span>BeastMode BootMode</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-5.jpeg" alt="image of a gym">
+                                              <div class="tx-content">
+                                                <h3>Classes fitness HIIT Hustle</h3>
+                                                <span>HIIT Hustle</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-6.jpeg" alt="image of a gym">
+                                              <div class="tx-content">
+                                                <h3>Classes fitness Fit Fusion</h3>
+                                                <span>Fit Fusion</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-7.jpeg" alt="image of a gym">
+                                             <div class="tx-content">
+                                                <h3>Classes fitness Cardio Crush</h3>
+                                                <span>Cardio Crush</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-8.jpeg" alt="image of a gym">
+                                             <div class="tx-content">
+                                                <h3>Classes fitness Knockout Fit</h3>
+                                                <span>Knowkout Fit</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-9.jpeg" alt="image of a gym">
+                                             <div class="tx-content">
+                                                <h3>Classes fitness zenstrong</h3>
+                                                <span>zenstrong</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-10.jpeg" alt="image of a gym">
+                                            <div class="tx-content">
+                                                <h3>Classes fitness Clute & Burn</h3>
+                                                <span>Clute & Burn</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-11.jpeg" alt="image of a gym">
+                                            <div class="tx-content">
+                                                <h3>Classes fitness Training Hit</h3>
+                                                <span>Training Hit</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="splide__slide">
+                                        <div class="tool-card">
+                                            <img src="images/carousel/img-12.jpeg" alt="image of a gym">
+                                             <div class="tx-content">
+                                                <h3>Classes fitness Bootmaster</h3>
+                                                <span>Bootmaster</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-
-                         <div class="stat-box">
-                              <i class="bx bx-heart"></i>
-                                 <div class="stat-text">
-                                   <h2 class="counter" data-target="1920">0</h2>
-                                 <p>Heart Beat</p>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="grid-text-card">
-                                <div class="caption-text">
-                                    <h2>Step Up Your Fitness</h2>
-                                    <p>
-                                        Welcome to Step Up Your Fitness – where your transformation begins. We are more than just a gym. We are a community that believes in progress, strength, and pushing past limits. Whether you're looking to burn fat, build muscle, boost endurance, or simply feel better in your own skin, we’re here to help you rise — step by step.
-                                    </p>
-                                </div>
-                                 <div class="img-box">
-                                    <img src="images/img-gym.jpeg" alt="Gym Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-           </section>
-
-    </div>
+                    </section>
+            </section>
+      </div>
+      
+       <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html>

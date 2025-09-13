@@ -1,0 +1,83 @@
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff
+  }
+  #header.scrolled .hamburger {
+  color: #000; /* black or dark for visibility on white */
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    z-index: 1100;
+    display: block;
+}
+
+  /* Hide nav by default */
+  .mobile-nav, .button-auto {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 70%;
+    background: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  .mobile-nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .contact-link {
+    flex-direction: column;
+    display: block;
+  }
+
+  .mobile-nav a {
+    color: #080505;
+    font-size: 1.2rem;
+    left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* When active, slide in */
+  .mobile-nav.active {
+    right: 0;
+  }
+  .stats-container {
+    flex-direction: column;
+  }
+  .stat-box {
+    flex-direction: column;
+  }
+  .odometer {
+    flex-direction: column;
+  }
+  .grid-text-card {
+    grid-template-columns: 1fr;
+  }
+  .caption-text {
+    text-align: center; 
+  }
+  .caption-text h2 {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
