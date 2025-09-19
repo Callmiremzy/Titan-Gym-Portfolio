@@ -546,11 +546,11 @@ nav ul li a:hover::after {
   box-shadow: 0 4px 10px rgba(0, 255, 153, 0.4);
 }
 /* Base styles for the schedule table */
-.schedule-table-wrapper {
-  width: 100%;
-  overflow-x: auto;
- -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
-
+.table-container {
+  width: 100%;           /* Make the container fit the screen width */
+  overflow-x: auto;      /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+  border: 1px solid #ddd;
 }
 
 .schedule-table {
