@@ -12,6 +12,7 @@
     <script src="script/odometer.js" defer></script>
     <script src="script/carousel.js" defer></script>
     <script src="script/hamburger.js" defer></script>
+    <script src="script/table.js" defer></script>
     <title>Titan Gym</title>
 </head>
 <body >
@@ -27,14 +28,14 @@
                                 <ul class="site-menu">
                                     <li><a href="#heroSection">Home</a></li>
                                     <li><a href="#classes">Classes</a></li>
-                                    <li><a href="#">Schedule</a></li>
-                                    <li><a href="#">Trainer</a></li>  
-                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#schedule">Schedule</a></li>
+                                    <li><a href="#trainers">Trainer</a></li>  
+                                    <li><a href="#services">Services</a></li>
                                 </ul>
                             </nav>    
                         </div>
                         <div class="button-auto">
-                            <a href="#" class="contact-link">
+                            <a href="#contact" class="contact-link">
                                 Contact
                             </a>
                         </div>
@@ -243,6 +244,430 @@
                             </div>
                     </section>
             </section>
+            <!-- SCHEDULE SECTION  -->
+            <section id="schedule" class="Schedule-section">
+             <div class="text-container">
+                   <div class="txt-context">
+                    <h2>Schedule</h2>
+                    <p>At Step Up Your Fitness, we’ve designed a flexible and dynamic <br> weekly schedule to fit your lifestyle — whether you're an early bird, <br> a midday warrior, or an after-hours hustler.</p>
+                </div>
+             </div>
+             <div class="week-days">
+                <button class="active" data-day="monday">Monday</button>
+                <button data-day="tuesday">Tuesday</button>
+                <button data-day="wednesday">Wednesday</button>
+                <button data-day="thursday">Thursday</button>
+                <button data-day="friday">Friday</button>
+                <button data-day="sunday">Sunday</button>
+            </div>
+            <table class="schedule-table" data-day="monday">
+                        <thead>
+                            <tr>
+                            <th>Class</th><th>Time</th><th>Trainer</th><th>Register</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td data-label="Class">PowerUp</td>
+                                <td data-label="Time">7:00am - 2:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                             </tr>
+                            <tr>
+                                <td data-label="Class">Sweat & shred</td>
+                                <td data-label="Time">9:00am - 1:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Class">ZenStrong</td>
+                                <td data-label="Time">1:00pm - 2:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Class">BurnZone</td>
+                                <td data-label="Time">3:00pm - 3:45pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Class">Flex & Flow</td>
+                                <td data-label="Time">5:00pm - 5:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+                        <table class="schedule-table" data-day="tuesday" style="display: none;">
+                        <thead>
+                            <tr>
+                            <th>Class</th><th>Time</th><th>Trainer</th><th>Register</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Class">ZenStrong</td>
+                                 <td data-label="Time">9:00am - 1:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                                <td data-label="Class">PowerUp</td>
+                                <td data-label="Time">7:00am - 2:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                              <tr>
+                                <td data-label="Class">Sweat & shred</td>
+                                <td data-label="Time">9:00am - 1:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                               <td data-label="Class">Flex & Flow</td>
+                                <td data-label="Time">5:00pm - 5:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                                <td data-label="Class">BurnZone</td>
+                                <td data-label="Time">3:00pm - 3:45pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                        </tbody>
+                     </table>
+                     
+                        <table class="schedule-table" data-day="wednesday" style="display: none;">
+                        <thead>
+                            <tr>
+                            <th>Class</th><th>Time</th><th>Trainer</th><th>Register</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td data-label="Class">BurnZone</td>
+                                <td data-label="Time">3:00pm - 3:45pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                              <tr>
+                                <td data-label="Class">Sweat & shred</td>
+                                <td data-label="Time">9:00am - 1:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Class">ZenStrong</td>
+                                <td data-label="Time">9:00am - 1:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                                <td data-label="Class">PowerUp</td>
+                                <td data-label="Time">7:00am - 2:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                               <td data-label="Class">Flex & Flow</td>
+                                <td data-label="Time">5:00pm - 5:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                        </tbody>
+                     </table>
+                        <table class="schedule-table" data-day="thursday" style="display: none;">
+                        <thead>
+                            <tr>
+                            <th>Class</th><th>Time</th><th>Trainer</th><th>Register</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td data-label="Class">Sweat & shred</td>
+                                <td data-label="Time">9:00am - 1:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                               <td data-label="Class">Flex & Flow</td>
+                                <td data-label="Time">5:00pm - 5:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                               <td data-label="Class">BurnZone</td>
+                                <td data-label="Time">3:00pm - 3:45pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Class">ZenStrong</td>
+                                <td data-label="Time">9:00am - 1:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                                <td data-label="Class">PowerUp</td>
+                                <td data-label="Time">7:00am - 2:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                        </tbody>
+                     </table>
+                      <table class="schedule-table" data-day="friday" style="display: none;">
+                        <thead>
+                            <tr>
+                            <th>Class</th><th>Time</th><th>Trainer</th><th>Register</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td data-label="Class">gym & shred</td>
+                                <td data-label="Time">9:00am - 1:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                               <td data-label="Class">strong & Flow</td>
+                                <td data-label="Time">5:00pm - 5:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                               <td data-label="Class">BurnZone</td>
+                                <td data-label="Time">3:00pm - 3:45pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Class">ZenStrong</td>
+                                <td data-label="Time">9:00am - 1:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                                <td data-label="Class">PowerUp</td>
+                                <td data-label="Time">7:00am - 2:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                        </tbody>
+                     </table>
+                      <table class="schedule-table" data-day="sunday" style="display: none;">
+                        <thead>
+                            <tr>
+                            <th>Class</th><th>Time</th><th>Trainer</th><th>Register</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td data-label="Class">Fitness & HIIT</td>
+                                <td data-label="Time">9:00am - 1:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                               <td data-label="Class">Flex & wheel</td>
+                                <td data-label="Time">5:00pm - 5:30pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                               <td data-label="Class">BurnZone</td>
+                                <td data-label="Time">3:00pm - 3:45pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                            <tr>
+                                <td data-label="Class">ZenStrong</td>
+                                <td data-label="Time">9:00am - 1:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                             <tr>
+                                <td data-label="Class">PowerUp</td>
+                                <td data-label="Time">7:00am - 2:00pm</td>
+                                <td data-label="Trainer">Mostafa Hassan</td>
+                                <td><a href="#contact" class="join-btn">Join Now</a></td>
+                            </tr>
+                        </tbody>
+                     </table>
+            </section>
+            <!-- TRAINERS SECTION  -->
+            <section id="trainers" class="train-section">
+                <div class="train-container">
+                    <div class="content-txt">
+                        <h2>Trainers</h2>
+                        <p>At Step Up Your Fitness, our trainers aren’t just instructors — <br>they’re motivators, mentors, and movement experts. Each member <br> of our training team is certified, experienced, and deeply passionate <br> about helping you unlock your full potential. Whether your goal is to <br> lose weight, gain muscle, improve mobility, or simply feel healthier, <br> our coaches are here to guide you every step of the way.</p>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="content-container">
+                       <div class="img-cont">
+                         <img src="images/Trainers.img/boxing.jpg.jpeg" alt="image boixng">
+                       </div>
+                        <h2>Nour Ahmed</h2>
+                        <span>A New Start After 30</span>
+                        <p>Nour Ahmed, 34, worked a desk job and struggled with weight gain and low energy. He felt constantly tired and had lost confidence in himself — until he decided to join Step Up Your Fitness. In his first month, he lost 5 kg and felt an energy shift he hadn’t experienced in years. After 6 months, he had shed 18 kg and built muscle for the first time in his life. Now, Ahmed trains regularly and has become an inspiration to his friends and coworkers.</p>
+                    </div>
+                      <div class="content-container">
+                        <div class="img-cont">
+                            <img src="images/Trainers.img/saha.jpeg" alt="image boixng">
+                        </div>
+                        <h2>Sara Ali</h2>
+                        <span>Confidence After Motherhood</span>
+                        <p>Sara, a mother of two, struggled with post-pregnancy weight gain and felt disconnected from her body. She tried multiple diets with no long-term results — until she joined the ladies’ program at Step Up. With customized workouts, supportive coaching, and a focus on mobility and mindset, she began to regain her strength. In just under 4 months, she lost 12 kg and felt reborn.</p>
+                    </div>
+                      <div class="content-container">
+                       <div class="img-cont">
+                         <img src="images/Trainers.img/Ibrahim.jpg.jpeg" alt="image boixng">
+                       </div>
+                        <h2>Youssef Ibrahim</h2>
+                        <span>From Stress to Strength</span>
+                        <p>Youssef had been dealing with stress and anxiety for years. He was searching for a way to release tension — not with pills, but with purpose. He signed up for a Boxing Fitness class, just to try something new… and it changed everything. Through physical challenge and emotional support, he found a healthy outlet. After three months, his sleep.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="services-section">
+                <div class="service-content">
+                    <div class="main-content">
+                        <h2>Our Featured <br> Services</h2>
+                        <p>At Step Up Your Fitness, we offer more than just workouts — we <br>deliver a full fitness experience tailored to your goals. Our featured <br> services are designed to help you train smarter, recover faster, and <br> feel your absolute best</p>
+                    </div>
+                </div>
+                <section id="lastCarousel" class="splide carousel-content" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide service-card">
+                                     <i class='bx  bx-calendar-heart bx-rotate-90 bx-flip-horizontal'  style='color:#ffffff'></i> 
+                                     <h3>Gym</h3>
+                                     <p> At Step Up Your Fitness, our gym isn’t just a room with equipment — it’s a space built for transformation. We offer a fully equipped gym floor with the latest machines, free weights, and functional training tools designed to support all types of workouts — from muscle building and toning to endurance and fat burning.</p>
+                            </li>
+                            <li class="splide__slide service-card">
+                                  <i class='bx bx-cycling'></i>
+                                  <h3>Circling</h3>
+                                  <p>
+                                     At Step Up Your Fitness, our Circuit Training sessions are designed to give you maximum results in minimal time. This dynamic, high-intensity workout takes you through a series of exercise stations with little to no rest in between — keeping your heart rate up and your muscles challenged.
+                                  </p>   
+                            </li>
+                            <li class="splide__slide service-card">
+                                <i class='bx  bx-heart bx-rotate-90 bx-flip-horizontal'  ></i> 
+                                  <h3>Aerobics</h3>
+                                  <p>
+                                      Get your heart pumping and your body moving with our high-energy Aerobics classes at Step Up Your Fitness! Perfect for anyone who wants to burn calories, improve coordination, and have fun while getting fit. Whether you're a beginner or a seasoned fitness lover, our aerobics sessions are designed to be easy to follow, super effective, and incredibly motivating.
+                                  </p>   
+                            </li>
+                            <li class="splide__slide service-card">
+                                <i class='bx  bx-dumbbell'  ></i> 
+                                <h3>Weight Lifting</h3>
+                                <p>
+                                     At Step Up Your Fitness, our Weight Lifting program is designed to help you unleash your full strength potential — whether you're a beginner learning proper form or an experienced lifter chasing new personal records.
+                                </p>
+                            </li>
+                            <li class="splide__slide service-card">
+                                <i class='bx  bx-donate-heart bx-rotate-90 bx-flip-horizontal'  style='color:#ffffff'></i> 
+                                <h3>Meditation</h3>
+                                <p>
+                                     At Step Up Your Fitness, we believe true wellness comes from within. Our Meditation sessions are designed to help you reset, refocus, and reconnect — whether you're dealing with stress, seeking clarity, or simply needing a moment of peace.
+                                </p>
+                            </li>
+                            <li class="splide__slide service-card">
+                                <i class='bx  bx-heart-square bx-rotate-90 bx-flip-horizontal'  style='color:#ffffff'></i> 
+                                <h3>Crossfit</h3>
+                                <p>
+                                     At Step Up Your Fitness, our CrossFit program is built for those who want more than just a workout — they want challenge, intensity, and real results. CrossFit is a high-intensity, functional training system that blends strength, cardio, agility, and endurance into one powerful workout.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section id="contact" class="contact-section">
+                <div class="contact-container">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Have questions? Ready to start your fitness journey? We’re here to help you take the first step! Whether you're looking for membership details, class schedules, or personalized training advice — our team is ready to support you.
+                    </p>
+                    <form action="#" class="contact-form">
+                        <div class="row">
+                            <input type="name" placeholder="First name" required/>
+                            <input type="name" placeholder="Last name" required/>
+                        </div>
+                        <input type="text" placeholder="Subject" required/>
+                        <input type="email" placeholder="Email" required/>
+                        <textarea placeholder="Write your message here." rows="6"></textarea>
+                        <button class="btn-card" type="submit">Send message</button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer-section">
+                <div class="footer-container">
+                    <div class="content-ftr">
+                        <div class="text-ct">
+                            <h4>TITAN GYM</h4>
+                            <P>
+                                Welcome to Titan Gym — where strength is built, limits are broken, and warriors are made.We are not just a fitness center; we are a training ground for the strong-willed. At Titan Gym, we provide the tools, space, and support to help you become the best version of yourself — physically and mentally.
+                            </P>
+                        </div>
+                        <div class="text-ct tab">
+                            <h4>LINKS</h4>
+                            <ul class="links-tab">
+                                <li><a href="#heroSection">Home</a></li>
+                                <li><a href="#classes">Classes</a></li>
+                                <li><a href="#schedule">Schedule</a></li>
+                                <li><a href="#trainers">Trainer</a></li>  
+                                <li><a href="#services">Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-ct sub-ch">
+                            <h4>SUBSCRIBE</h4>
+                            <P> 
+                                Meditation
+                                Gym
+                                Aerobatics
+                                Subscribe
+                                Ready to take your fitness to the next level?
+                                Subscribe to Titan Gym and stay updated with
+                            </P>
+                            <form action="#">
+                                <input type="email" placeholder="Email" required/>
+                            </form>
+                            <h4>CONNECT</h4>
+                            <ul class="">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-square-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                  </div>
+                      <div class="last-txt">
+                        <p>
+                            CALLMIREMZY &copy; 2025 All right reserved | by EMMANUEL ETUK
+                        </p>
+                </div>
+            </footer>
       </div>
       
        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
